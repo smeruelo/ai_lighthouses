@@ -20,10 +20,8 @@ instructions.
 ## Documentation
 
 The documentation and API reference is generated from the source
-interfaces. It can be consulted [online][doc] or via `odig doc
+interfaces. It can be consulted [online](doc) or via `odig doc
 ai_lighthouses`.
-
-[doc]: https://github.com/smeruelo/ai_lighthouses/doc
 
 ## Sample programs
 

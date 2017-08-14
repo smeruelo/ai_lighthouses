@@ -1,6 +1,6 @@
 description = "Library to build bots to compete in the Euskal Encounter AI Contest"
 version = "%%VERSION_NUM%%"
-requires = ""
+requires = "alcotest"
 archive(byte) = "ai_lighthouses.cma"
 archive(native) = "ai_lighthouses.cmxa"
 plugin(byte) = "ai_lighthouses.cma"

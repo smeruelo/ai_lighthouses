@@ -1,4 +1,6 @@
-true : bin_annot, safe_string, package(bytes)
+true : bin_annot, safe_string
+true : warn_error(+1..49)
+true : warn(+A-4-6-7-9-40-42-44-48)
 
 <src> : include
 <test> : include
