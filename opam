@@ -1,0 +1,22 @@
+opam-version: "1.2"
+maintainer: "Sonia Meruelo <smeruelo@gmail.com>"
+authors: ["Sonia Meruelo <smeruelo@gmail.com>"]
+homepage: "https://github.com/smeruelo/ai_lighthouses"
+doc: "https://github.com/smeruelo/ai_lighthouses/doc"
+license: "BSD2"
+dev-repo: "https://github.com/smeruelo/ai_lighthouses.git"
+bug-reports: "https://github.com/smeruelo/ai_lighthouses/issues"
+tags: []
+available: [ ocaml-version >= "4.01.0"]
+depends:
+[
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "topkg" {build & >= "0.9.0"}
+]
+depopts: []
+build:
+[[
+  "ocaml" "pkg/pkg.ml" "build"
+          "--dev-pkg" "%{dev}%"
+]]
