@@ -1,4 +1,4 @@
-PKG topkg alcotest
+PKG topkg alcotest yojson atdgen
 
 S src
 S test

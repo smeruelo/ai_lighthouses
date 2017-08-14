@@ -6,3 +6,5 @@ tmp
 *.install
 *.native
 *.byte
+*_t.ml*
+*_j.ml*

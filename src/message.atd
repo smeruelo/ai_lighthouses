@@ -1,0 +1,30 @@
+type point = (int * int) wrap <ocaml module="Point">
+type int_array = int list <ocaml repr="array">
+type view = int_array list <ocaml repr="array">
+type cell = int wrap <ocaml module="Cell">
+type cell_array = cell list <ocaml repr="array">
+type cells = cell_array list <ocaml repr="array">
+
+type lighthouse = {
+  position: point;
+  owner: int;
+  energy: int;
+  connections: point list;
+  have_key: bool;
+}
+
+type init = {
+  player_num: int;
+  player_count: int;
+  position: point;
+  cells <json name="map">: cells;
+  lh_positions <json name="lighthouses">: point list;
+} <ocaml field_prefix="init_">
+
+type turn = {
+  position: point;
+  score: int;
+  energy: int;
+  view: view;
+  lighthouses: lighthouse list;
+} <ocaml field_prefix="turn_">
