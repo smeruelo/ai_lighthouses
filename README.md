@@ -1,5 +1,6 @@
 ai_lighthouses — Library to build bots to compete in the Euskal Encounter AI Contest
 -------------------------------------------------------------------------------
+
 %%VERSION%%
 
 ai_lighthouses is TODO
@@ -7,6 +8,12 @@ ai_lighthouses is TODO
 ai_lighthouses is distributed under the BSD2 license.
 
 Homepage: https://github.com/smeruelo/ai_lighthouses  
+
+## The contest
+
+The AI Contest that takes place every year at the [Euskal Encounter](https://www.euskal.org/) was conceived by [marcan](https://marcan.st/). Participants write autonomous robots that compete with each others to control lighthouses over a map. The specification can be found [here](https://github.com/marcan/lighthouses_aicontest/blob/master/aicontest_spec.txt).
+
+This library aims to provide the implementation of the game protocol so contestants can focus on the AI part.
 
 ## Installation
 
